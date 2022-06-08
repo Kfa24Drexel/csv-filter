@@ -1,29 +1,17 @@
-# csv-filter-challenge-public
-# Instructions
-1. Click "Use this template" to create a copy of this repository in your personal github account.  
-1. Using technology of your choice, complete assignment listed below.
-1. Update the README in your new repo with:
-    * a `How-To` section containing any instructions needed to execute your program.
-    * an `Assumptions` section containing documentation on any assumptions made while interpreting the requirements.
-1. Send an email to Scoir (andrew@scoir.com) with a link to your newly created repo containing the completed exercise (preferably no later than one day before your interview).
+# CSV Filter Challenge
+- This project was written in Python
+- There is a test CSV file provided in the `CSVFiles` folder
 
-## Expectations
-1. This exercise is meant to drive a conversation. 
-1. Please invest only enough time needed to demonstrate your approach to problem solving, code design, etc.
-1. Within reason, treat your solution as if it would become a production system.
+## How-To
+1. Clone the repository
+2. Open your terminal and locate the `CSVFilter.py` file
+3. Once the file is located in terminal run `py CSVFilter.py`
+4. A test CSV file is provided for the CSV file input which is `test.csv`    
+- **Note: You can add additional CSV files in the `CSVFiles` folder**
 
-## Assignment
-Create a command line application that parses a CSV file and filters the data per user input.
-
-The CSV will contain three fields: `first_name`, `last_name`, and `dob`. The `dob` field will be a date in YYYYMMDD format.
-
-The user should be prompted to filter by `first_name`, `last_name`, or birth year. The application should then accept a name or year and return all records that match the value for the provided filter. 
-
-Example input:
-```
-first_name,last_name,dob
-Bobby,Tables,19700101
-Ken,Thompson,19430204
-Rob,Pike,19560101
-Robert,Griesemer,19640609
-```
+## Assumptions
+- Only one CSV file will run at a time and it's decided by user input
+- The CSV file has data in correct order and formatted correctly
+- Uppercase and lowercase first/last names are filtered the same
+- All date ranges are acceptable input
+- Filtering first/last names gives only exact matches. For example, an first name input of "Rob" will not include "Robert" in the filter
