@@ -61,4 +61,3 @@ if __name__ == "__main__":
         
     
         
-# Current assumptions: CSV File data follows the format, upper & lower case does not matter
